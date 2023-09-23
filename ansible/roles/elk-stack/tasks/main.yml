@@ -1,0 +1,5 @@
+---
+- name: Install Docker
+  ansible.builtin.script: files/get_docker.sh 
+
+- name: Elastick Stack container deploy 

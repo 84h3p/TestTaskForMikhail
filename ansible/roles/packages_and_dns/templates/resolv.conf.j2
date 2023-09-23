@@ -1,0 +1,3 @@
+{% for dns_server_ip in dns_servers_ip %}
+nameserver {{ dns_server_ip }}
+{% endfor %}

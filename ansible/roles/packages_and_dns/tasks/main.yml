@@ -1,0 +1,19 @@
+---
+- name: Set DNS settings
+  template: 
+    src: templates/resolv.conf.j2
+    dest: /etc/resolv.conf
+
+- name: Update cache
+  apt:
+    update_cache: yes
+  
+- name: Install packages 
+  apt: 
+    name:
+      - neovim
+      - nginx
+      - chrony
+      - bind9
+      - nmap
+    state: present
