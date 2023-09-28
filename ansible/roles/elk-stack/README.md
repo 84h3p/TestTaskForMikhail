@@ -2,4 +2,4 @@
 
 Для деплоя роли:
 
-`ansible-playbook start.yml -u root'
+`ansible-playbook start.yml -u root`
