@@ -1,0 +1,4 @@
+- hosts: packages_and_dns
+  become: true
+  roles:
+    packages_and_dns
